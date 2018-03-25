@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Дегустация на вина 2017</title>
+	<link type="text/css" rel="stylesheet" href="degustMultiLang.css">
+	<script type="text/javascript" src="degustBg.js"></script>
+</head>
+<body>
+
+<!-- //////////////////////////////////// Bulgarian //////////////////////////////////////////////// -->
+
+	<div id="mainBg">
+		<a href="degustEng.html" onclick="changeToEng(); return false;"><img src="Images/england.gif" id="imgEng" class="flag" width="30" height="200"></a>
+		<a href="degustFr.html" onclick="changeToFr(); return false;"><img src="Images/france.gif" id="imgFr" class="flag" width="30" height="20"></a>
+		<h1 id="title">ДЕГУСТАЦИЯ НА ВИНА</h1>
+		<div id="den">
+			Дата: <span id="textA" class="vhod"></span>
+		</div>
+		<div id="mainContent">
+			<p>Допустимо отклонение от средната оценка:	<input type="text" id="otklonenie" class="vhod" maxlength="2" name="A" /></p>
+			<div id="form">
+				<input type="submit" id="clickMe1" class="butoni dobavi" value="Добави дегустатор" />
+				<input type="submit" id="clickMe2" class="butoni premahni" value="Премахни дегустатор" />
+				<input type="submit" id="clickMe3" class="butoni dobavi" value="Добави вино" />
+				<input type="submit" id="clickMe4" class="butoni premahni" value="Премахни вино" />
+			</div>
+			<div id="fields">
+				<p id="imena" class="zaglavia"><span id="degust">Дегустатори:</span></p>
+				<span>Оценки:</span>
+				<p id="otsenki" class="zaglavia"></p>
+			</div>
+		</div>
+		<div id="butonRezultat">
+			<p>
+				<input type="submit" id="clickMe5" class="butoni" value="Покажи класирането на вината" />
+			</p>
+		</div>
+		<div id="result">
+			<p id="demo" class="posleden"></p>
+		</div>
+	</div>
+
+</body>
+</html>

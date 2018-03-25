@@ -1,0 +1,151 @@
+body	{
+	background-color: #ffffa0;
+}
+
+#den	{
+	margin-bottom: 10px;
+}
+
+#mainContent	{
+	display: block;
+}
+
+#result	{
+	display: none;
+}
+
+.vhod	{
+	width: 70px;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+#otklonenie	{
+	width: 35px;
+	height: 30px;
+	border-radius: 50%;
+	font-size: 16px;
+}
+
+.butoni	{
+	width: 100px;
+	/*height: 60px;*/
+	white-space: normal;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	/*background-color: #ffb9dc;*/
+}
+
+.dobavi	{
+	background-color: #b0f9b0;
+}
+
+.premahni	{
+	background-color: #ffa6a6;
+	margin-right: 60px;
+}
+
+#clickMe5	{
+	width: 300px;
+	background-color: #f9c465;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.text {
+	width: 90px;
+	resize: none;
+	padding: 5px;
+	margin-right: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.wineNumber	{
+	width: 160px;
+	font-weight: bold;
+	margin-right: 13px;
+}
+
+.note	{
+	width: 40px;
+	margin-left: 30px;
+	margin-right: 33px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: blue;
+}
+
+.averrNote	{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #585858;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+.classementNote	{
+	display: inline-block;
+	height: 20px;
+	border-radius: 5px;
+	background-color: #44ca54;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+
+.demosi	{
+	border-top: 1px solid black;
+}
+
+#imena	{
+	/*font-weight: bold;*/
+	line-height: 50px;
+	/*border: 1px solid black;*/
+	margin-bottom: 10px;
+}
+
+#degust	{
+	display: inline-block;
+	width: 180px;
+	font-weight: bold;
+}
+
+#otsenki	{
+	font-weight: bold;
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+
+img	{
+	height: 20px;
+	vertical-align: middle;
+}   
+
+.flag	{
+	padding: 10px 5px;
+}
+
+#demo {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
