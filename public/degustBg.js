@@ -41,15 +41,45 @@ window.onload = function() 	{
 // 	} 
 // }
 
+
+
+var digustatorTemplate = `
+	<div class="digustator" id="_ID_">
+		<input type="text" value="_NAME_"></input>
+		<button>Save</button>
+	</div>
+`;
+
+
+function addDigustator() {
+	//var degustator = document.createElement("TEXTAREA");
+	//degustator.setAttribute("class", "text");
+	//document.getElementById("imena").appendChild(degustator);
+	
+	$.ajax({
+		type: "POST",
+		url: "/digustator",
+		data: {
+			name: "Digustator"
+		},
+		success: function(data) {
+			var elDigustator = digustatorTemplate.replace('_ID_', data._id).replace('_NAME_', data.name);
+			$('#imena').append($(elDigustator));
+			
+		}
+	});
+	
+}
+
 function runTheCode1()	{
+	
+	
+	
+	
 	if((probaKod.length == 0) && (allNotes.length == 0)) 	{
-		var degustator = document.createElement("TEXTAREA");
-		degustator.setAttribute("class", "text");
-		document.getElementById("imena").appendChild(degustator);
+		addDigustator();
 	} else {
-		var degustator = document.createElement("TEXTAREA");
-		degustator.setAttribute("class", "text");
-		document.getElementById("imena").appendChild(degustator);
+		addDigustator();
 
 
 		for(i = 0; i < probaKod.length; i++)	{
@@ -107,7 +137,9 @@ function runTheCode3()	{
 
 /////////// Add fields for the note for every person //////////////////
 
-	for (i = 0; i < allDegust.length; i++)	{	
+	var digustatori = $('.digustator');
+	
+	$('.digustator').each(function(digustator) {
 		wineSample = document.createElement("INPUT");
 		wineSample.setAttribute("type", "text");
 		wineSample.setAttribute("class", "note");
@@ -117,7 +149,7 @@ function runTheCode3()	{
 		wineSample.addEventListener("keypress", checkNameSample, false);
 		// wineSample.setAttribute("onblur", "runTheCalcul()");
 		document.getElementById("otsenki").appendChild(wineSample);
-	}
+	});
 
 /////////// Add averrage NOTE ///////////////////////////
 

@@ -149,3 +149,16 @@ img	{
 	line-height: 1.7;
 }
 
+.marks {
+	display: inline-block;
+}
+
+.sigle-mark {
+	display: inline; 
+	margin-right: 10px;
+	width: 80px;
+}
+
+.wine {
+	margin-bottom: 5px;
+}
